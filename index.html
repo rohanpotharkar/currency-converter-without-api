@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Currency Converter Without API</title>
+   <link rel="stylesheet" href="/css/bootstrap.css">
+</head>
+
+<body>
+
+   <nav class="navbar bg-dark text-center ">
+      <div class="container-fluid">
+         <h1 class="h1 col-12 text-light my-0">CURRENCY CONVERTER</h1>
+         <blockquote class="col-12 blockquote-footer offset-1 ps-50 my-0">Without API</blockquote>
+      </div>
+   </nav>
+
+   <div class="container-fluid py-2">
+
+      <div class="d-flex justify-content-around align-items-center">
+         <p class="col-6 my-0 display-6"><em>From</em></p>
+         <p class="col-6 my-0 display-6"><em>To</em></p>
+      </div>
+
+      <div class="d-flex justify-content-around col-12">
+         <div class="d-flex align-items-center col-6">
+            <select class=" form-select form-select-lg curr1 fs-4">
+               <option selected>USD</option>
+               <option>EUR</option>
+               <option>AUD</option>
+               <option>JPY</option>
+               <option>CAD</option>
+               <option>INR</option>
+            </select>
+         </div>
+
+         <div class="d-flex align-items-center col-6">
+            <select class=" form-select form-select-lg curr2 fs-4">
+               <option selected>INR</option>
+               <option>EUR</option>
+               <option>AUD</option>
+               <option>JPY</option>
+               <option>CAD</option>
+               <option>USD</option>
+            </select>
+         </div>
+      </div>
+
+      <div class="my-3 input">
+         <label for="userinput" class="form-label fs-5">Enter Your Amount :</label>
+         <input type="number" class="form-control" id="userinput" value="0">
+      </div>
+
+      <div class="d-flex justify-content-center flex-wrap my-2 button">
+         <button class="col-lg-2 col-12 py-1 fs-5">Get Result</button>
+      </div>
+
+      <div class="d-flex justify-content-center flex-wrap my-2 button">
+         <p class="py-2 fs-4" id="result">0.00 USD = 0.00 INR</p>
+      </div>
+
+      <div class="alert alert-primary d-flex align-items-center d-none" role="alert">
+         <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:"><use xlink:href="#info-fill"/>
+            <symbol id="info-fill" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+            </symbol>
+          </svg>
+         <div>
+           Refresh your page to start from the beginning :)
+         </div>
+       </div>
+
+   </div>
+
+   <script src="rates.js"></script>
+   <script src="index.js"></script>
+   <script src="/js/bootstrap.js"></script>
+</body>
+
+</html>
